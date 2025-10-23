@@ -1,14 +1,6 @@
 """
 Bachelier-based market making strategy for the Cornell Derivatives Case.
 
-What changed in this version
-----------------------------
-- Restored clear comments on WHICH hyperparameters to move to tighten or widen markets.
-- Added a boolean flag `aggressive_options` (default False).
-    * False  -> "current" logical options quoting (no aggressive nudges).
-    * True   -> explicitly aggressive options mode (tighter spreads & inward push) to
-                increase fill probability, especially when options look cheap.
-
 Expected environment
 --------------------
 - The autograder injects an AbstractTradingStrategy to subclass.
